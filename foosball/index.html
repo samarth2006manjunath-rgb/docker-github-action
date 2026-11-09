@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foosball - Home</title>
+    <title>Foosball - Home | Deploying to cloud</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -98,6 +98,29 @@
     </div>
 
     
+
+    <!-- Cloud Deployment Banner (Group Task 5) -->
+    <div class="container my-5">
+        <div class="alert alert-success text-center shadow-sm" role="alert">
+            <h2 class="alert-heading mb-2"><i class="bi bi-cloud-check"></i> Deploying to cloud</h2>
+            <p class="mb-0">This page is built into a Docker image by GitHub Actions, pushed to DockerHub, and served live from Render.</p>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <h5><i class="bi bi-github"></i> 1. Push to GitHub</h5>
+                <p class="text-muted">A push to the main branch kicks off the GitHub Actions workflow.</p>
+            </div>
+            <div class="col-md-4">
+                <h5><i class="bi bi-box-seam"></i> 2. Build on DockerHub</h5>
+                <p class="text-muted">The workflow builds an nginx image of this site and pushes it to DockerHub.</p>
+            </div>
+            <div class="col-md-4">
+                <h5><i class="bi bi-globe"></i> 3. Run on Render</h5>
+                <p class="text-muted">Render pulls the latest image and serves it at a public URL.</p>
+            </div>
+        </div>
+        <p class="text-center text-muted small mt-3">IS 202 &middot; Group 5 &middot; Group Task 5: Deploy to Production</p>
+    </div>
 
     <!-- Features Section -->
     <div class="container my-5">
